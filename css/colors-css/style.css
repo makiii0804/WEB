@@ -1,0 +1,74 @@
+/* Paragraphs */
+
+.firstParagraph {
+
+color: darkturquoise;
+background-color: #e91e63;
+opacity: 50%;
+
+}
+
+.secondParagraph {
+
+color: 	rgb(0, 206, 209);
+background-color: 	rgba(0, 100, 0, 0.5);
+
+}
+
+.thirdParagraph {
+
+color: 	#00ced1;
+background-color: darkblue;
+
+}
+
+/* Images */
+
+.img1 {
+
+    opacity: 30%;
+}
+
+.img2 {
+
+    background-color: 	rgba(255, 0, 0, 0.5);
+}
+
+/* Table */
+
+table {
+
+    border-collapse: collapse;
+}
+
+table tr td {
+
+    border: solid black;
+}
+
+.AliceBlue {
+
+    background-color: aliceblue;
+}
+
+.HotPink {
+
+    background-color: HotPink;
+
+}
+
+.Purple {
+
+    background-color: rgba(128, 0, 128, 0.5)
+    
+}
+
+.DarkBlue {
+
+    background-color: rgba(0, 0, 139, 0.8);
+}
+
+.DarkGreen {
+
+    background-color: rgba(0, 100, 0, 0.7)
+}
