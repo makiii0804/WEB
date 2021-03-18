@@ -1,0 +1,44 @@
+@font-face {
+    font-family: 'SyneMono';
+    src: url('fonts/SyneMono-Regular.ttf')
+}
+h1 {
+    font-family: 'Quicksand';
+}
+.first {
+    font-family: 'SyneMono';
+    font-weight: normal;
+}
+
+.first q {
+    font-family: Arial;
+}
+
+.second {
+    font-family: 'Verdana';
+    font-style: oblique;
+}
+
+.second q {
+    font-family: 'Georgia';
+}
+
+.third {
+
+    font-family: 'Courier New';
+}
+
+.third q {
+
+    font-family: 'Verdana';
+}
+.third span {
+
+    font-weight: bolder;
+    font-style: italic;
+}
+body {
+
+    font-size: 30px;
+    font-weight: bold;
+}

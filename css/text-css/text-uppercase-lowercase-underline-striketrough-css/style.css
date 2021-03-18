@@ -1,0 +1,54 @@
+.first {
+    text-transform: uppercase;
+    text-decoration: underline;
+    text-align: justify;
+}
+
+.first::first-letter {
+    color: blue;
+    font-weight: bolder;
+    font-size: 30px;
+}
+
+.second {
+    text-transform: lowercase;
+    text-decoration: line-through;
+    text-align: justify;
+}
+
+.spacing {
+
+    letter-spacing: 5px;
+    text-align: left;
+}
+
+.line-height {
+
+    line-height: 200%;
+    text-align: right;
+}
+
+p {
+    text-align: center;
+}
+
+ul {
+
+    background-color: teal;
+    width: 70px;
+    text-shadow: -4px -3px 2px rgba(0, 0, 0, 1);
+    
+}
+
+a:link {
+    color:red;
+}
+a:visited {
+    color: black;
+}
+a:hover {
+    color: green;
+}
+a:active {
+    color: blue;
+}
