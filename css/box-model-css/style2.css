@@ -1,0 +1,46 @@
+p {
+    background: yellow;
+    border: 5px black solid;
+    
+}
+.prvi , .treci {
+ border: 5px red dashed;
+ padding: 50px;
+}
+.drugi{
+    border:5px green solid;
+    padding-top: 50px;
+}
+.prvi {
+    width: 300px;
+    margin: 50px;
+}
+.drugi {
+    width: 400px;
+    margin: auto;
+    visibility: hidden;
+}
+.treci {
+    width: 200px;
+    margin-left: 100px;
+    visibility: hidden;
+}
+.prvi, .drugi, .treci {
+    margin-right: 20px;
+    padding: 0px;
+    display: inline-block;
+}
+h1 {
+    width: 960px;
+    text-align: center;
+    margin: 50px auto;
+    padding: 50px 0px;
+    font-family: 'Quicksand';
+}
+div {
+    max-width: 50px auto;
+    background: aquamarine;
+    color: blue;
+    box-shadow: 3px 3px 5px 6px #ccc;
+    border-radius: 50%;
+}
