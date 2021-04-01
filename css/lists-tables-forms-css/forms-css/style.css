@@ -1,0 +1,56 @@
+form {
+    width: 350px;
+    margin: 60px auto;
+    background-color: #eeeeee;
+    padding-bottom: 10px;
+    border-radius: 20px 0 20px 0;
+  }
+  div h1 {
+    text-align: center;
+    padding: 40px 0 10px 0;
+    color: rgb(45, 62, 80);
+    font-size: 32px;
+  }
+  form h1 span {
+    padding: 40px 0;
+    color: rgb(255, 190, 0);
+    font-size: 32px;
+  }
+  hr {
+    width: 80%;
+    display: block;
+    margin: 0 auto 20px auto;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+  }
+  form label {
+    padding-top: 3px;
+    width: 80%;
+    display: block;
+    height: 30px;
+    margin: 0 auto;
+    display: block;
+    color: rgb(45, 62, 80);
+  }
+  form input {
+    font-size: 12.8px;
+    text-indent: 4px;
+    width: 80%;
+    height: 30px;
+    margin: 0 auto;
+    display: block;
+    box-shadow: 0px 0px 7px 2px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 0px 0px 7px 2px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 0px 0px 7px 2px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+  }
+  form button {
+    font-size: 12.8px;
+    color: white;
+    margin: 20px auto;
+    width: 80%;
+    height: 30px;
+    display: block;
+    background-color: #c1392b;
+    border-radius: 5px;
+    cursor: url(./pngtree-cute-cartoon-hand-mouse-pointer-icon-image_2292876.jpg) auto;
+  }

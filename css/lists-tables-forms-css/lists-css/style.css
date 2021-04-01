@@ -1,0 +1,23 @@
+#firstList {
+    list-style-type: circle;
+}
+#secondList {
+    list-style-type: square;
+}
+#thirdList {
+    list-style-type: upper-alpha;
+}
+#fourthList {
+    list-style-type: upper-roman; 
+}
+#styleImage {
+    width: 200px;
+    margin-left: 200px;
+    list-style-image: url(https://image.shutterstock.com/image-vector/checkmark-icon-vector-logo-template-260nw-1303711975.jpg)
+    
+}
+#markers {
+    list-style: inside;
+    width: 200px;
+    list-style-image: url(https://image.shutterstock.com/image-vector/checkmark-icon-vector-logo-template-260nw-1303711975.jpg);
+}

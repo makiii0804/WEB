@@ -1,0 +1,25 @@
+table {
+    margin: auto;
+    border-collapse: collapse;
+}
+
+.tHeader {
+    background-color:darkred;
+    height: 70px;
+    color: white;
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.imgTable {
+    height: 100px;
+}
+td {
+    padding: 10px, 0px;
+}
+
+tr:hover td {
+    background-color: yellow;
+}
+tr:nth-child(odd) {
+    background: lightgrey; 
+}
