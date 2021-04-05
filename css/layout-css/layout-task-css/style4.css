@@ -1,100 +1,83 @@
-#container {
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.clearFix {
+  clear: both;
+}
+.container {
   width: 960px;
   margin: auto;
-  /* font-weight: 700; */
 }
 
-ul {
-  list-style-type: none;
-  background-color: #c8352f;
-  overflow: hidden;
-  margin: auto;
-  border-bottom: 1px solid white;
-}
-
-li {
+.nav li {
   float: right;
-  display: block;
-  padding: 15px 20px;
+  margin: 10px;
+}
+.nav {
+  background-color: darkred;
+  overflow: hidden;
+  margin-bottom: 3px;
+}
+
+.nav li > a {
+  text-decoration: none;
   color: white;
 }
-.firstRow {
-  float: left;
+
+ul > li {
+  list-style-type: none;
 }
-
-/* .firstRow div {
-   float: left; 
-} */
-
-/* .firstRow p {
-  float: left;
-} */
-
-.div1 {
+img {
+  width: 100%;
+}
+.placeholder {
   width: 300px;
   height: 200px;
-  text-align: center;
+  margin-bottom: 5px;
 }
-
-/* .div1 p {
-  display: block;
-  margin-top:92px;
-    text-align: center;
-   width: 100%;
-  margin: auto;
-}  */
-
-.coll {
+.placeholder.red {
+  background-color: red;
+}
+.placeholder.blue {
+  background-color: darkblue;
+}
+.placeholder.green {
+  background-color: green;
+}
+.placeholder.yellow {
+  background-color: yellow;
+}
+.article p {
   width: 300px;
-  margin-left: 20px;
+  height: 200px;
+}
+.links {
+  background-color: yellow;
+  overflow: hidden;
+  float: right;
+  padding: 20px 10px;
+}
+.links li {
+  padding: 5px 0px;
+}
+.links li a {
+  color: darkslategrey;
+  text-decoration: none;
+      
+}
+.article {
   float: left;
+  margin: 5px;
 }
-
-#blue {
-  background-color: #2d3e50;
+.footer {
+  background-color: darkblue;
   color: white;
+  
 }
+.pFooter {
+  padding: 10px 0 10px 290px;
+  
 
-#red {
-  background-color: #c1392b;
-  color: white;
-}
-
-#yellow {
-  background-color: #ffbe00;
-  color: white;
-}
-
-#green {
-  background-color: #27ae61;
-  color: white;
-}
-
-#text {
-  background-color: #ffbe00;
-  width: 280px;
-  height: 230px;
-  text-align: left;
-  margin-left: 20px;
-  padding-top: 5px;
-}
-
-footer {
-  float: left;
-  height: 50px;
-  width: 100%;
-  background-color: #2d3e50;
-  color: white;
-}
-
-footer p {
-  margin-left: 260px;
-}
-
-#blue p,
-#red p,
-#yellow p,
-#green p {
-  position: relative;
-  top: 90px;
 }
