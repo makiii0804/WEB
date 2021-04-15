@@ -1,0 +1,171 @@
+* {
+    margin:0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+    body {
+        padding: 20px;
+    }
+    .container {
+        width: 100%;
+        margin: auto;
+    }
+    header {
+        text-align: center;
+        margin: 20px 0;
+        
+    }
+    
+    .wrapper {
+        
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 30px;
+        margin-top: 30px;
+        border: 1px solid lightgrey;
+        border-radius: 7px;
+
+    }
+    img {
+        display: block;
+        width: 100%;
+        margin-bottom: 20px;
+        
+    }
+    h1 {
+        font-weight: lighter;
+        margin: 0px;
+    }
+    
+    header > nav > ul > li {
+        list-style-type: none;
+                
+    }
+    
+    ul > li {
+        
+        border: 1px solid lightgrey;
+    }
+    .radius {
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+                
+    }
+
+    ul > li > a {
+        display: block;
+        text-decoration: none;
+        padding: 10px;
+        border: black;
+    }
+    ul li:hover { /*proveriti*/
+        background-color: blue;
+        
+    }
+    ul li:hover a { /*proveriti*/
+        
+        color: white;
+    }
+    .article {
+        border: 1px solid lightgrey;
+        margin: 20px 0;
+        border-radius: 7px;
+        padding: 10px;
+        text-align: center;
+        
+    }
+    .clearFix::after, .clearFix::before {
+        content: '';
+        display: table;
+    }
+    .clearFix::after {
+        clear: both;
+    }
+
+    @media screen and (min-width: 570px) {
+        header {
+            position: relative;
+            overflow: hidden;
+            
+        }
+        h1 {
+            float: left;
+        }
+        
+        nav {
+            width: 50%;
+            position: absolute;
+            top: 0;
+            right: 0;
+            
+            
+        }
+        nav ul {
+            float: right;
+            
+        }
+        nav ul li {
+            float: left;
+            border: none;
+            border-radius: 5px;      
+        }
+        ul li a {
+            text-align: center;
+            margin: 0px;
+        }
+        .wrapper {
+            clear: both;
+            margin-top: 50px;
+        }
+        .radius {
+            border-radius: 5px;
+        }
+        .article {
+            min-height: 120px;
+            padding-right: 10px;
+        }
+        .article img {
+            max-width: 50%;
+            max-height: 100px;
+            width: auto;
+            display: block;
+            float: left;
+            margin: 0;
+        }
+        .article p {
+            padding: 15px 0;
+            text-align: center;
+        }
+    }
+    @media screen and (min-width: 992px) {
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .article img {
+            float: none;
+            width: 100%;
+            max-width: 100%;
+            max-height: 100%;
+            
+            
+        }
+        .article {
+            float: right;
+            width: 33%;
+            border: none;
+            padding: 5px;
+            
+        }
+        .article p {
+            padding: 10px;
+            
+        }
+        .wrapper {
+            margin-top: 50px;
+        }
+    }
+
+
