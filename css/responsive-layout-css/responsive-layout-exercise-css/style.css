@@ -60,11 +60,11 @@
         padding: 10px;
         border: black;
     }
-    ul li:hover { /*proveriti*/
+    ul li:hover { 
         background-color: blue;
         
     }
-    ul li:hover a { /*proveriti*/
+    ul li:hover a { 
         
         color: white;
     }
