@@ -1,0 +1,124 @@
+@font-face {
+    font-family: Roboto;
+    src: url("../assets/fonts/Roboto-Black.ttf");
+    font-weight: 900;
+  }
+  
+  @font-face {
+    font-family: Roboto-light;
+    src: url(../assets/fonts/Roboto-Light.ttf);
+    font-weight: lighter;
+  }
+  
+  * {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+  }
+  
+  .container {
+    width: 100%;
+    margin: auto;
+  }
+  
+  nav {
+    margin-top: 30px;
+  }
+  
+  nav p {
+    font-size: 40px;
+    color: gray;
+    text-align: center;
+    font-family: Roboto;
+    font-weight: 900;
+  }
+  
+  nav span {
+    font-size: 40px;
+    color: orange;
+    border-top: 5px solid gray;
+    border-bottom: 5px solid gray;
+    border-left: 5px solid gray;
+  }
+  
+  nav ul {
+    width: 80%;
+    margin: auto;
+    background-color: rgb(107, 170, 221);
+    list-style-type: none;
+    margin-top: 20px;
+    margin-bottom: 30px;
+  }
+  
+  nav ul li {
+    text-align: center;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: white;
+    display: block;
+    padding: 15px;
+  }
+  
+  header {
+    background-image: url(../assets/images/banner3.jpg);
+    background-size: cover;
+    padding-bottom: 100px;
+  }
+  
+  header h1 {
+    width: 100%;
+    padding-top: 150px;
+    text-align: center;
+    color: white;
+  }
+  
+  header button {
+    background-color: blue;
+    color: white;
+    width: 130px;
+    padding: 10px;
+    border-radius: 30px;
+    font-family: Roboto-light;
+    font-weight: lighter;
+    margin: 0 auto;
+    margin-top: 40px;
+    display: block;
+  }
+  
+  @media screen and (min-width: 768px ) {
+      nav p {
+          
+          padding-left: 15px;
+          padding-top: 40px;
+          float: left;
+          color: white;        
+        }
+        nav span {
+            border-top: 5px solid white;
+            border-bottom: 5px solid white;
+            border-left: 5px solid white;
+        }
+        nav ul {
+            margin-left: 70px;
+        }
+        
+        nav ul li{
+            margin-top: 40px;
+            
+            
+            float: left;
+            
+            
+        }
+        nav ul li a {
+            padding: 10px;   
+            
+        }    
+        header {
+            margin-top: 0px;
+        }
+            
+    }
+    
