@@ -1,0 +1,22 @@
+.column {
+    border: 1px solid black;
+}
+.rowbg1 {
+    background-color: yellow;
+}
+.rowbg2 {
+    background-color: teal;
+}
+.rowbg3 {
+    background-color: violet;
+}
+
+.colbg1 {
+    background-color: turquoise;
+}
+.colbg2 {
+    background-color: whitesmoke;
+}
+.colbg3 {
+    background-color: tomato;
+}

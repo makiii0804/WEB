@@ -1,0 +1,93 @@
+
+$greenish: #18bc9c;
+$blueish: #2c3e50;
+$color-text: #495057;
+.container {
+    padding: 0;
+    
+}
+.container-fluid {
+    h1 {
+        margin-top: 20px;
+        text-align: center;
+        text-transform: uppercase;
+    }
+}
+
+.container-fluid .hero {
+    background-color: $greenish;
+    text-align: center;
+    width: 100%;
+}
+.hero {
+    padding-top: 20px ;
+    color: white;
+    text-transform: uppercase;
+    p {
+        text-transform: capitalize;
+        padding-bottom: 10px;
+    }
+}
+.section {
+    
+    text-align: center;
+img {
+    width: 80%;
+}
+}
+.article {
+    margin-top: 40px;
+    background-color: $greenish;
+    color: white;
+    text-align: center;
+    h2 {
+        text-transform: uppercase;
+    }
+    button {
+        background-color: $greenish;
+        color: white;
+        border: 1px solid white;
+        text-transform: capitalize;
+        margin-bottom: 5px;
+    }
+}
+.form {
+    
+    color: #495057;
+    margin: 0 auto;
+        h2 {
+            margin-top: 20px;
+            text-transform: uppercase;
+            text-align: center;
+    }   
+        form {
+            input {
+            margin-bottom: 5px;
+        }
+        button {
+            margin-top: 5px;
+            text-align: left;
+            color: white;
+            background-color: $greenish;
+            border: 1px solid white;
+        }
+        
+    }
+   
+}
+footer {
+    background-color: $blueish;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    
+    h3 {
+         margin-top: 20px;
+    }
+    .footer-span span {
+        display: block;
+        padding: 0;
+        color: $color-text;
+        font-size: 14px;
+    }
+}
