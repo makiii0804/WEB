@@ -1,0 +1,11 @@
+.bg-color {
+    background-color: green;
+}
+.li-bg {
+    background-color: red;
+}
+
+.li-transform {
+    background-color: teal;
+    text-transform: uppercase;
+}
