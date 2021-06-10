@@ -6,7 +6,7 @@ html, body {
 .path {
     background-color: #0212FE;
     background-image: url('./SuperMarioAssets/bg.jpg');
-    background-position: center bottom;
+    background-position: 0 bottom;
     background-repeat: repeat-x;
     height: 100%;
     width: 100%;
