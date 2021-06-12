@@ -11,6 +11,7 @@ window.addEventListener('keydown', function (e) {
         if(mario.getAttribute('src') === './SuperMarioAssets/mario.png') {
             mario.removeAttribute('src');
             mario.setAttribute('src', './SuperMarioAssets/mario_running.gif');
+            mario.style.transform = 'scaleX(+1)';
             moveBg = setInterval(function() {
                 
                 x-=1;
@@ -20,6 +21,20 @@ window.addEventListener('keydown', function (e) {
             
         }
         
+        
+    }
+    if(e.key == 'ArrowLeft') {
+        if(mario.getAttribute('src') === './SuperMarioAssets/mario.png') {
+            mario.removeAttribute('src');
+            mario.setAttribute('src', './SuperMarioAssets/mario_running.gif');
+            mario.style.transform = 'scaleX(-1)';
+            moveBg = setInterval(function() {
+                
+                x+=1;
+                path.style.backgroundPosition = x +'px bottom';
+                
+            },1) 
+        }
     }
     
     
@@ -28,6 +43,11 @@ window.addEventListener('keydown', function (e) {
 window.addEventListener('keyup', function (e) {
     
     if(e.key == 'ArrowRight') {
+        mario.removeAttribute('src');
+        mario.setAttribute('src', './SuperMarioAssets/mario.png');
+        clearInterval(moveBg);
+    }
+    if(e.key == 'ArrowLeft') {
         mario.removeAttribute('src');
         mario.setAttribute('src', './SuperMarioAssets/mario.png');
         clearInterval(moveBg);
