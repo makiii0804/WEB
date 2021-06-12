@@ -16,6 +16,7 @@ html, body {
     position: absolute;
     height: 150px;
     bottom: 80px;
+    transition: bottom .7s;
     left: 40%;
-    
+        
 }

@@ -3,6 +3,8 @@ var mario = document.querySelector('.mario');
 var body = document.body;
 var x = 0;
 var moveBg;
+var jump;
+var position = 80;
 
 
 window.addEventListener('keydown', function (e) {
@@ -36,7 +38,17 @@ window.addEventListener('keydown', function (e) {
             },1) 
         }
     }
-    
+
+    if(e.key == ' ') {
+        
+        mario.style.bottom = position + 120 + 'px';
+        jump = setTimeout( function() {
+            mario.style.bottom = position + 'px';
+        },800)
+
+    }
+
+       
     
 })
 
@@ -52,5 +64,9 @@ window.addEventListener('keyup', function (e) {
         mario.setAttribute('src', './SuperMarioAssets/mario.png');
         clearInterval(moveBg);
     }
+
+    
 })
+
+
 
