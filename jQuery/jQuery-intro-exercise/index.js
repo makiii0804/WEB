@@ -1,3 +1,6 @@
+$(function() {
+    console.log('Hello World');
+});
 $('li').click(function() {
     
     $(this).remove();
