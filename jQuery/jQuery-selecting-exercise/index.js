@@ -17,10 +17,19 @@ var liActive = $('li.active').css({
 
 //Find the middle one and change its background color
 
-var changeBg = $("li").each(function (index, element) {
+var $middleLi = $("li:nth-of-type(3)");
+
+$middleLi.css({
+  "background-color": "yellow",
+});
+
+
+
+
+/*var changeBg = $("li").each(function (index, element) {
     if(index === 2) {
         $(element).css({
             'background-color':'yellow'
         });
     }
-});
+}); other way */
