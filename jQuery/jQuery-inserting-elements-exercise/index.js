@@ -5,30 +5,22 @@ All links to images in the gallery should be elements of the same array!
 When the gallery is created and visible on the page, create gallery title and
 insert it before the gallery images
 Go through gallery images and set a random size to each gallery image*/
-var body = $('body');
+var $body = $('body');
 
-var divContainer = $('<div>');
-divContainer.css({
-    'background-color':'yellow',
-    'width':'500px',
-    'height':'500px',
-    
-})
-body.append(divContainer);
-var arrLinks = ['http://qnimate.com/wp-content/uploads/2014/03/images2.jpg','http://qnimate.com/wp-content/uploads/2014/03/images2.jpg','c'];
+var $divContainer = $('<div>').css({
+    'width': '800px',
+    'margin': '0 auto'
+});
 
-var img1 = $('<img>');
-img1.attr('src', arrLinks[0]);
-img1.css({
-    'width':'300px',
-   
-})
-divContainer.append(img1);
+$body.append($divContainer);
 
+var $arrLinks = ['https://images.pexels.com/photos/1619317/pexels-photo-1619317.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940','https://images.pexels.com/photos/132037/pexels-photo-132037.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940','https://images.pexels.com/photos/1476880/pexels-photo-1476880.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940','https://images.pexels.com/photos/1619317/pexels-photo-1619317.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940','https://images.pexels.com/photos/132037/pexels-photo-132037.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940','https://images.pexels.com/photos/1476880/pexels-photo-1476880.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940'];
 
-var img2 = $('<img>');
-img2.attr('src', arrLinks[1]);
-img2.css({
-    'width':'300px'
-})
-divContainer.append(img2);
+$.each($arrLinks, (function(index){
+    var $size = Math.round(300 * Math.random() + 100);
+    $divContainer.append($('<img>').attr('src', $arrLinks[index]).css({
+        'width': $size,
+        'height': $size,
+        'object-fit':'cover'
+    }));
+}))
