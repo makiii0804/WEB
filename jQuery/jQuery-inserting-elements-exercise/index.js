@@ -24,3 +24,11 @@ $.each($arrLinks, (function(index){
         'object-fit':'cover'
     }));
 }))
+
+var $heading = $('<h1>').text('Amazing Gallery').css({
+    'color':'orange',
+    'font-family':'Arial',
+    'font-weight':'bold',
+    'text-align':'center'
+});
+$divContainer.prepend($heading);
