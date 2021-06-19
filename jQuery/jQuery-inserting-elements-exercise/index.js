@@ -5,6 +5,7 @@ All links to images in the gallery should be elements of the same array!
 When the gallery is created and visible on the page, create gallery title and
 insert it before the gallery images
 Go through gallery images and set a random size to each gallery image*/
+
 var $body = $('body');
 
 var $divContainer = $('<div>').css({
@@ -16,14 +17,22 @@ $body.append($divContainer);
 
 var $arrLinks = ['https://images.pexels.com/photos/1619317/pexels-photo-1619317.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940','https://images.pexels.com/photos/132037/pexels-photo-132037.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940','https://images.pexels.com/photos/1476880/pexels-photo-1476880.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940','https://images.pexels.com/photos/1619317/pexels-photo-1619317.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940','https://images.pexels.com/photos/132037/pexels-photo-132037.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940','https://images.pexels.com/photos/1476880/pexels-photo-1476880.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940'];
 
-$.each($arrLinks, (function(index){
-    var $size = Math.round(300 * Math.random() + 100);
-    $divContainer.append($('<img>').attr('src', $arrLinks[index]).css({
-        'width': $size,
-        'height': $size,
-        'object-fit':'cover'
-    }));
-}))
+var $isSize = false;
+$.each($arrLinks, function (index) {
+  var $size = Math.round(300 * Math.random() + 100);
+  var img = $("<img>").attr("src", $arrLinks[index]).css({
+    width: $size,
+    height: $size,
+    "object-fit": "cover",
+  });
+  $divContainer.append(img);
+  if ($size < "200" && $isSize === false) {
+    img.css({
+      border: "5px solid green",
+    });
+    $isSize = true;
+  }
+});
 
 var $heading = $('<h1>').text('Amazing Gallery').css({
     'color':'orange',
