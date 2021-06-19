@@ -18,18 +18,22 @@ $body.append($divContainer);
 var $arrLinks = ['https://images.pexels.com/photos/1619317/pexels-photo-1619317.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940','https://images.pexels.com/photos/132037/pexels-photo-132037.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940','https://images.pexels.com/photos/1476880/pexels-photo-1476880.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940','https://images.pexels.com/photos/1619317/pexels-photo-1619317.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940','https://images.pexels.com/photos/132037/pexels-photo-132037.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940','https://images.pexels.com/photos/1476880/pexels-photo-1476880.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940'];
 
 var $isSize = false;
+
 $.each($arrLinks, function (index) {
-  var $size = Math.round(300 * Math.random() + 100);
+  var $size = Math.round(200 * Math.random() + 100);
   var img = $("<img>").attr("src", $arrLinks[index]).css({
     width: $size,
     height: $size,
     "object-fit": "cover",
   });
   $divContainer.append(img);
+
   if ($size < "200" && $isSize === false) {
     img.css({
       border: "5px solid green",
     });
+    
+  } else {
     $isSize = true;
   }
 });
