@@ -54,8 +54,8 @@ $field.append($player);
 
 $field.click(function(event){
   if(movement === true) {
-    $player.css({top:(event.pageY -40) +'px'}),
-    $player.css({left:(event.pageX -40) +'px'})
+    $player.css({top:(event.pageY -60) +'px'}),
+    $player.css({left:(event.pageX -60) +'px'})
     }
 })
 
