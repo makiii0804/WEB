@@ -1,13 +1,16 @@
 var $body = $("body");
-var $field = $("<img>");
+var $html = $("html");
+var $field = $("<div>");
 var $player = $("<img>");
 var $button = $("<button>");
-$field.attr("src", "./img/field.png");
+var movement = true;
+//$field.attr("src", "./img/field.png");
 $player.attr("src", "./img/player.png");
 $button.text("Stop moving");
 
+
 $field.css({
-  //" background-image": "url(./img/field.png)",
+  "background-image": "url('./img/field.png')",
   "background-repeat": "no-repeat",
   "background-size": "contain",
   "background-position": "center",
@@ -15,6 +18,9 @@ $field.css({
   height: "100%",
   width: "100%",
 });
+$html.css({
+  height: "100%"
+})
 
 $body.css({
   height: "100%",
@@ -26,6 +32,7 @@ $player.css({
   position: "absolute",
   top: "0",
   left: "200px",
+  transition: '1s'
 });
 
 $button.css({
@@ -40,6 +47,24 @@ $button.css({
   cursor: "pointer",
 });
 
-$body.prepend($player);
 $body.append($field);
 $body.append($button);
+$field.append($player);
+
+
+$field.click(function(event){
+  if(movement === true) {
+    $player.css({top:(event.pageY -40) +'px'}),
+    $player.css({left:(event.pageX -40) +'px'})
+    }
+})
+
+$button.click(function() {
+  if(movement === true) {
+    movement = false;
+    $button.text("Start moving");
+  } else {
+    movement = true;
+    $button.text("Stop moving");
+  }
+})
