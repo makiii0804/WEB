@@ -17,6 +17,8 @@ $.each(arrImageLinks1, function (index) {
 
 $('body').append($gallery1);
 
+var $imgBorder = $gallery1.children('img:nth-child(2)').addClass('selected');
+
 $.each(arrImageLinks2, function (index) {
     
     var $img2 = $("<img>").attr("src", arrImageLinks2[index]).css({
@@ -27,4 +29,13 @@ $.each(arrImageLinks2, function (index) {
 });
 
 $('body').append($gallery2);
+
+
+$(function(){
+$imgBorder.removeClass('selected');
+$gallery1 =$imgBorder.parent();
+$gallery2 = $gallery1.next();
+$midImg = Math.round($gallery2.children().length / 2)
+$($gallery2).children('img:nth-child('+ $midImg +')').addClass('selected')
+})
     
