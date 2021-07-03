@@ -14,10 +14,10 @@ newRequest.onload = function () {
     var continent = response.querySelector(
       "geoplugin_continentName"
     ).textContent;
-    var sity = response.querySelector("geoplugin_city").textContent;
+    var city = response.querySelector("geoplugin_city").textContent;
     $countryDisplay.textContent = "Country: " + country;
     $continentDisplay.textContent = "Continent: " + continent;
-    $sityDisplay.textContent = "Sity: " + sity;
+    $cityDisplay.textContent = "city: " + city;
   }
 };
 $submit.addEventListener("click", function () {
