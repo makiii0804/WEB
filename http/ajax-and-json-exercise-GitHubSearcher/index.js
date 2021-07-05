@@ -21,3 +21,12 @@ request.onload = function () {
     });
   }
 };
+
+$searchInput.addEventListener("keydown", function (e) {
+    if (e.keyCode === 13) {
+      var user = $searchInput.value;
+      var completeUrl = endpoint + user + "&per_page=6";
+      request.open("GET", completeUrl);
+      request.send();
+    }
+  });
