@@ -1,6 +1,9 @@
 .colorOfNav {
-    background-color: #343a40 !important;
-  }
-  h1 {
-    text-align: center;
-  }
+  background-color: #343a40 !important;
+}
+h1 {
+  text-align: center;
+}
+ul {
+  list-style-type: none;
+}
