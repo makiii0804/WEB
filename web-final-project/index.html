@@ -18,19 +18,20 @@
       <nav class="navbar navbar-dark bg-dark colorOfNav">
         <div class="container-fluid">
           <a class="navbar-brand">BitShow</a>
-          <form class="d-flex">
+          <form class="d-flex position-relative" style="z-index: 1">
             <input
-              class="form-control me-2"
+              class="form-control"
               type="search"
               placeholder="Search"
               aria-label="Search"
             />
+            <div
+              class="position-absolute top-100 end-0 bg-light mw-80"
+              id="dropDownList"
+            ></div>
           </form>
         </div>
       </nav>
-      <div class="dropdown open">
-        <ul class="dropdown-menu" id="dropdown"></ul>
-      </div>
       <h1>Popular Shows</h1>
       <main>
         <div class="container">
@@ -38,6 +39,21 @@
             class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3"
             id="movieList"
           ></div>
+          <div class="row" id="singleMovie">
+            <div class="col-6">
+              <img class="movieImg" src="" alt="" />
+            </div>
+            <div class="col-6">
+              <h2>Seasons (<span class="seasons"></span>)</h2>
+              <ul></ul>
+              <h2>Cast</h2>
+              <ul></ul>
+            </div>
+            <div class="col-12">
+              <h2>Show Detalis</h2>
+              <p></p>
+            </div>
+          </div>
         </div>
       </main>
     </div>

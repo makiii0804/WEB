@@ -7,3 +7,10 @@ h1 {
 ul {
   list-style-type: none;
 }
+li {
+  cursor: pointer;
+  padding: 3px;
+  box-sizing: border-box;
+  border-bottom: 1px solid darkgray;
+  width: 80%;
+}
