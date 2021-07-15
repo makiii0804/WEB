@@ -14,3 +14,6 @@ li {
   border-bottom: 1px solid darkgray;
   width: 80%;
 }
+a {
+  cursor: pointer;
+}
