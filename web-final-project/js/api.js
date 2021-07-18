@@ -137,4 +137,3 @@ $searchInput.addEventListener("keyup", function () {
     request.send();
     
   })
-  // kreirati event listener na input polju on keypress, unutar eventa imamo request.onload I sve te korake. u complete url ćemo imati endpoint + input.value + ona prečica za 10per page. Nakon toga pravimo foreach za lijeve unutar ul id.dropdown
